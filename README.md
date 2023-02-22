@@ -14,7 +14,7 @@ keyboardCounter粗来啦。。。
 keycounts.ini里面，keydistence是按键的键程，一般情况下官方是有公布的，当然也可以自己粗略的估计一下。单位毫米。
 
 # 构架
-利用miniblink(https://github.com/miniblink/miniblink)作为ui框架，依赖的dll是note64.dll。
+利用miniblink( https://github.com/miniblink/miniblink )作为ui框架，依赖的dll是note64.dll。
 主界面是keycounts.html，随手写了几行。。。
 
 # 后续想法
