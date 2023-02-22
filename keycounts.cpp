@@ -153,7 +153,7 @@ int main()
 		return -1;
 	}
 	CWebView mainwnd;
-	mainwnd.CreateWebViewWindow(wkeWindowType::WKE_WINDOW_TYPE_TRANSPARENT, NULL, 0, 0, 115, 70);
+	mainwnd.CreateWebViewWindow(wkeWindowType::WKE_WINDOW_TYPE_TRANSPARENT, NULL, 0, 0, 123, 70);
 	//mainwnd.SetWindowIcon(IDC_MAINFRAME);
 	mainwnd.SetWindowTitle("main");
 #ifdef _DEBUG
