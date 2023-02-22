@@ -11,6 +11,7 @@ keyboardCounter粗来啦。。。
 
 <img decoding="async" src="https://github.com/sinnren/keyboardCounter/blob/main/ui.png">
 按键：实时键盘的按键   
+
 次数：每分钟敲击键盘的次数   
 里程：根据键程计算出来的手指的里程数（按键次数x2x键程，一次敲击是按下和弹起，所以x2）  
 
