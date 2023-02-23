@@ -216,7 +216,7 @@ int main()
 		{
 			//天发生变化了  初始化总计数器
 			mday = tmt.tm_mday;
-			g_totalkeycounts;
+			g_totalkeycounts = 0;
 		} 
 		
 		//按下弹起，两次键程，所以要x2，最后换算为米
