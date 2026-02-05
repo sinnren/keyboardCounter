@@ -1,18 +1,108 @@
 <html>
 <header>
 	<style>
+        :root {
+            --bg: #f4f7fb;
+            --card: #ffffff;
+            --accent: #4c7dff;
+            --text: #1f2a44;
+            --muted: #6b7280;
+            --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
 	        -webkit-app-region: drag;
-	        background-color: #eef0f4;
-            font-weight: bolder;
-            font-size: 10pt;
-            line-height: 5px;
+	        background: radial-gradient(circle at top, #eef3ff 0%, var(--bg) 55%);
+            font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-weight: 600;
+            font-size: 12pt;
+            color: var(--text);
+            margin: 0;
+            padding: 16px;
+            min-height: 100vh;
+        }
+
+        .panel {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 16px 18px;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .title {
+            font-size: 13pt;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .title::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 0 4px rgba(76, 125, 255, 0.15);
+        }
+
+        .stat {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f7f9ff;
+            border-radius: 12px;
+            padding: 10px 12px;
+            line-height: 1.4;
+        }
+
+        .label {
+            color: var(--muted);
+            font-weight: 600;
+        }
+
+        .value {
+            font-size: 14pt;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .unit {
+            font-size: 9pt;
+            font-weight: 600;
+            color: var(--muted);
+            margin-left: 6px;
         }
 	</style>
 </header>
 <body>
-	<p>按键：<span id='key'></span></p>
-	<p>次数：<span id='speed'></span>/分钟</p>
-	<p>里程：<span id='distence'></span>米</p>
+    <section class="panel">
+        <div class="title">Keyboard Counter</div>
+        <div class="stat">
+            <span class="label">按键</span>
+            <span class="value" id="key">-</span>
+        </div>
+        <div class="stat">
+            <span class="label">次数</span>
+            <span class="value">
+                <span id="speed">-</span>
+                <span class="unit">/分钟</span>
+            </span>
+        </div>
+        <div class="stat">
+            <span class="label">里程</span>
+            <span class="value">
+                <span id="distence">-</span>
+                <span class="unit">米</span>
+            </span>
+        </div>
+    </section>
 </body>
 </html>
